@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="top-bar">
+            <div class="redes">
+                <a href="https://www.facebook.com/profile.php?id=61558988717938">
+                    <img src="img/facebook.png" alt="Facebook" class="redes-iconos">
+                </a>
+                <a href="https://www.instagram.com/chocolates.rossi/">
+                    <img src="img/instagram.png" alt="Instagram" class="redes-iconos">
+                </a>
+                 <a href="https://wa.me/573112499443?text=Hola%20quiero%20más%20información" target="_blank">
+                    <img src="img/whats.png" alt="WhatsApp" class="redes-iconos">
+                </a>
+                <a href="https://www.tiktok.com/@rosi.chocolates">
+                    <img src="img/tiktok.png" alt="TikTok" class="redes-iconos">
+                </a>
+            </div>
+        </div>
+        <header class="banner">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="Rosi Chocolates">
+                </a>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="nosotros.html">NOSOTROS</a></li>
+                    <li><a href="catalogo.html">CATÁLOGO</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <!-- Confirmación de pedido -->
+        <div class="container-pedido">
+            <div class="contact-form">
+                <form id="rosiform"
+                    action="https://docs.google.com/forms/d/e/1FAIpQLScOGDzHANOjpzqVcVf9cXG_riMRcu1aT1TfVGRtt1h5-vtAVQ/formResponse"
+                    method="POST" target="hidden_iframe">
+
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="entry.1950251481" id="nombre" required>
+
+                    <label for="numero">Número:</label>
+                    <input type="text" name="entry.580367572" id="numero" required>
+
+                    <label for="correo">Correo:</label>
+                    <input type="email" name="entry.160256309" id="correo" required>
+
+                    <label for="pedido">Pedido:</label>
+                    <select name="entry.607732398" id="pedido" required>
+                        <option value="">Selecciona un pedido...</option>
+                        <option value="Pops de Chocolate">Pops de Chocolate</option>
+                        <option value="Cheesecake Café">Cheesecake Café</option>
+                        <option value="Fresas con Crema">Fresas con Crema</option>
+                        <option value="Caja de Chocolates">Caja de Chocolates</option>
+                    </select>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+
+            <iframe name="hidden_iframe" style="display:none;"></iframe>
+            <div class="success-message" id="success">¡Gracias! Tu pedido ha sido registrado 🍫</div>
+
+            <script>
+                const form = document.getElementById("rosiform");
+                const successMessage = document.getElementById("success");
+
+                form.addEventListener("submit", function (e) {
+                    e.preventDefault();
+                    const data = new FormData(form);
+                    fetch(form.action, {
+                        method: "POST",
+                        body: data,
+                        mode: "no-cors"
+                    }).then(() => {
+                        form.reset();
+                        successMessage.style.display = "block";
+                    });
+                });
+            </script>
+        </div>
+
+
+        <footer>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=61558988717938">
+                    <img src="img/facebook.png" alt="Facebook" class="redes-iconos">
+                </a>
+                <a href="https://www.instagram.com/chocolates.rossi/">
+                    <img src="img/instagram.png" alt="Instagram" class="redes-iconos">
+                </a>
+                 <a href="https://wa.me/573112499443?text=Hola%20quiero%20más%20información" target="_blank">
+                    <img src="img/whats.png" alt="WhatsApp" class="redes-iconos">
+                </a>
+                <a href="https://www.tiktok.com/@rosi.chocolates">
+                    <img src="img/tiktok.png" alt="TikTok" class="redes-iconos">
+                </a>
+            </div>
+
+            <p><a href="mailto:rosichocolates2@gmail.com">rosichocolates2@gmail.com</a></p>
+            <p>3112499443</p>
+            <div class="footer-copy">
+                <p>© 2025 Rosi Chocolates. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,566 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contenedor {
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+/* INICIO ICONOS CON FONDO ROSADO */
+.top-bar {
+  background-color: #DC6475;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 8px 40px;
+}
+
+.redes-iconos {
+  width: 22px;
+  height: 22px;
+  margin: 0 10px;
+  transition: transform 0.2s, opacity 0.3s;
+  display: block;
+  border: none;
+  outline: none;
+}
+
+.social-icons a {
+  text-decoration: none !important;
+  color: transparent !important;
+  border: none !important;
+  outline: none !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+}
+
+.redes-iconos:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+/* FIN ICONOS CON FONDO ROSADO */
+
+/* INICIO BANNER*/
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: #fff;
+  border-bottom: #DC6475 solid;
+}
+
+.logo img {
+  height: auto;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 60px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  font-family: "Barlow Condensed", sans-serif;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: color 0.3s;
+  margin-bottom: 10px;
+}
+
+.menu a:hover {
+  color: #d76a7a;
+}
+
+.redes-iconos {
+  display: inline-block;
+  vertical-align: middle;
+  border: none;
+  outline: none;
+}
+/* FIN BANNER*/
+
+/* ESTILOS INICIO */
+.cabezote-inicio {
+  background-image: url('../img/fresas-cho.png');
+  background-size: cover;
+  color: white;
+  text-align: left;
+  padding: 130px 90px;
+  position: relative;
+}
+
+.cabezote-inicio h1 {
+  font-family: "Baloo 2", sans-serif;
+  font-size: 50pt;
+}
+
+.cabezote-inicio .subtexto {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  /* regular */
+  font-size: 20pt;
+}
+
+/* ----- Sección ¿Quiénes somos? ----- */
+.quienes-somos {
+  padding: 80px 0px;
+}
+
+.quienes-somos .contenedor {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 60px;
+  max-width: 1500px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.imagen-equipo img {
+  border-radius: 10px;
+  margin-left: 50px;
+}
+
+.texto-quienes h2 {
+  color: #a12d2f;
+  margin-bottom: 20px;
+   font-family: "Baloo 2", sans-serif;
+  font-size: 30pt;
+}
+
+.texto-quienes p {
+  margin-bottom: 15px;
+  font-size: 14pt;
+  font-family: "Nunito", sans-serif;
+  margin-right: 150px;
+}
+
+/* ----- Sección Nuestra artesanía ----- */
+.nuestra-artesania {
+  text-align: center;
+}
+
+.nuestra-artesania h2 {
+  color: #a12d2f;
+  margin-bottom: 25px;
+   font-family: "Baloo 2", sans-serif;
+  font-size: 30pt;
+}
+
+.nuestra-artesania p {
+  max-width: 1000px;
+  margin: 0 auto 80px;
+  font-size: 14pt;
+  font-family: "Nunito", sans-serif;
+}
+
+.imagen-artesania img {
+  width: 100%;
+}
+
+/* FIN ESTILOS INICIO*/
+
+/*ESTILOS NOSOTROS*/
+
+/* ---------- HISTORIA ---------- */
+
+.tit{
+  color: #A62739;
+  margin-bottom: 20px;
+  font-family: "Baloo 2", sans-serif;
+  font-size: 30pt;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.historia {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 60px;
+  margin-right: 200px;
+}
+
+.historia-texto {
+  flex: 1;
+  font-size: 12pt;
+  font-family: "Nunito", sans-serif;
+}
+
+.historia-img img {
+  width: 300px;
+  height: auto;
+  margin: 20px 30px 0px 200px;
+}
+
+/* ---------- MISION / VISION ---------- */
+.mision-vision {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  padding: 40px 80px;
+  background-image: url("../img/fresas2.jpg");
+  background-size: contain;
+background-position: center;
+  border-top: 5px solid #b12c3b;
+  border-bottom: 5px solid #b12c3b;
+  margin-bottom: 60px;
+  height: 400px;
+}
+
+.mision,
+.vision {
+  width: 48%;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 40px;
+  border-radius: 10px;
+  font-size: 12pt;
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+}
+
+.mision h3,
+.vision h3 {
+  color: #b12c3b;
+  margin-bottom: 20px;
+  font-family: "Baloo 2", sans-serif;
+  font-size: 30pt;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+
+/* ---------- OBJETIVO ---------- */
+.objetivo {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.objetivo h3 {
+  color: #A62739;
+  margin-bottom: 20px;
+  font-family: "Baloo 2", sans-serif;
+  font-size: 30pt;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.objetivo-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 40px;
+  margin-left: 170px;
+}
+
+.objetivo-texto {
+  flex: 1;
+  text-align: left;
+  font-size: 12pt;
+  font-family: "Nunito", sans-serif;
+}
+
+.objetivo-img img {
+  width: 300px;
+  height: auto;
+  margin-right: 170px;
+  margin-left: 120px;
+}
+
+/* ---------- VALORES ---------- */
+.valores {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.valores h3 {
+  color: #A62739;
+  margin-bottom: 20px;
+  font-family: "Baloo 2", sans-serif;
+  font-size: 30pt;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.valores-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.valor {
+  text-align: center;
+}
+
+.valor img {
+  margin: 15px 20px;
+}
+
+.valor p {
+  color: #b12c3b;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 20pt
+}
+/* FIN ESTILOS NOSOTROS*/
+
+/* ESTILOS CATALOGO */
+/* Cabezote principal */
+.cabezote {
+  background-image: url('../img/banner.png');
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  flex-direction: column;
+  height: 600px;
+  border-bottom: #511C29 solid;
+  border-top: #511C29 solid;
+}
+
+.cabezote p {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 30pt;
+  margin: 0px 10px -30px -150px;
+}
+
+.cabezote h1 {
+  margin: 0;
+  font-family: "Baloo 2", sans-serif;
+  font-size: 90pt;
+}
+
+/* Productos */
+.productos {
+  display: flex;
+  flex-direction: column;
+}
+
+.producto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.producto .texto {
+  width: 50%;
+  padding: 1rem;
+}
+
+.producto .texto h2 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  color: #511C29;
+  font-size: 30pt;
+  margin-bottom: 20px;
+}
+
+.producto .texto h3 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  color: #F7E4C7;
+  font-size: 30pt;
+  margin-bottom: 20px;
+}
+
+.producto .texto p {
+  line-height: 1.5;
+  font-size: 14pt;
+  font-family: "Nunito", sans-serif;
+  margin-right: 150px;
+}
+
+.producto .imagen {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.producto .imagen img {
+  width: 100%;
+}
+
+/* Colores de fondo */
+.fondo-claro {
+  background-color: #f8e3d8;
+  padding: 0px 0px 0px 100px;
+}
+
+.fondo-oscuro {
+  background-color: #5a1f2c;
+  color: white;
+}
+
+/* FIN ESTILOS CATALOGO */
+
+/* ESTILOS CONTACTO */
+.container-pedido {
+  background-color: #ffffff;
+  background-image: url("../img/fresas-fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  /* apila el mensaje debajo */
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  /* ✅ antes era 100vh */
+  margin: 0;
+  padding: 50px 0;
+  /* añade aire arriba y abajo */
+}
+
+.contact-form {
+  background-color: #7a1626;
+  padding: 3rem;
+  /* más espacio interno */
+  border-radius: 25px;
+  width: 420px;
+  /* antes 350px */
+  margin: 80px auto;
+  /* centrado con espacio arriba */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+  align-items: center;
+}
+
+label {
+  color: #fff;
+  font-weight: 400;
+  font-size: 14pt;
+  align-self: flex-start;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+input,
+select {
+  background-color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 14px;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+select {
+  cursor: pointer;
+}
+
+button {
+  margin-top: 10px;
+  background-color: #fff;
+  color: #8B1E2A;
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 14pt;
+}
+
+button:hover {
+  background-color: #f2f2f2;
+}
+
+.success-message {
+  text-align: center;
+  color: #8B1E2A;
+  font-weight: bold;
+  margin-top: 20px;
+  display: none;
+  background: #fff;
+  border-radius: 10%;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 14pt;
+
+}
+
+/* FIN ESTILOS CONTACTO*/
+
+/*INICIO FOOTER */
+
+footer {
+  background-color: #DC6475;
+  color: #fff;
+  text-align: center;
+  padding: 25px 0;
+  font-family: 'Nunito', sans-serif;
+}
+
+footer .social-icons {
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+footer .social-icons a {
+  color: #fff;
+}
+
+footer p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 3px 0;
+}
+
+footer p a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer p a:hover {
+  text-decoration: underline;
+}
+
+.footer-copy {
+  background-color: #DC6475;
+  padding: 8px 0;
+}
+
+.footer-copy p {
+  font-size: 12px;
+  margin: 0;
+  opacity: 0.9;
+}
+
+/* FIN FOOTER */
